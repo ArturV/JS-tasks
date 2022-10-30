@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +26,28 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+#output {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 50px;
+}
+
+#output div {
+  margin: 20px;
+  --x: 50%;
+  --y: 50%;
+  padding: 1em 2em;
+  color: white;
+  outline: none;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  background: linear-gradient(#000, #000) padding-box,
+    radial-gradient(farthest-corner at var(--x) var(--y), #00c9a7, #845ec2)
+      border-box;
+}
+
+#output div h3 {
+  padding-bottom: 10px;
 }

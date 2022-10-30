@@ -17,8 +17,13 @@
       <div class="wrapper">
         <h1 class="headline">Weight Converter</h1>
         <!-- Users input -->
-        <form>
-          <input type="text" id="search" placeholder="Enter kilograms..." />
+        <form id="weight-converter">
+          <input
+            type="number"
+            step="0.001"
+            id="search"
+            placeholder="Enter kilograms..."
+          />
           <input type="submit" id="submit-btn" value="Calculate" />
         </form>
         <!-- Place for output after form submission -->
